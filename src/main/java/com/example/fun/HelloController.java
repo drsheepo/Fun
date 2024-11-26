@@ -31,6 +31,8 @@ public class HelloController {
     public RadioButton Button6;
     public RadioButton ButtonAdd;
     public ChoiceBox ChoiceBox;
+    public TextField MemeText;
+    public Label Meme;
     Image image3;
     Image imageExtra;
     Image image2;
@@ -152,7 +154,13 @@ public class HelloController {
         imageExtra = new Image(input8);
         Background.setImage(imageExtra);
     }
-
+    public void updateMemeButton() throws Exception {
+        System.out.println(MemeText.getText());
+    }
+    public void updateText() throws Exception {
+        System.out.println(MemeText.getText());
+        Meme.setText(MemeText.getText());
+    }
 
 }
 
